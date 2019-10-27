@@ -16,5 +16,13 @@ else
     echo "vim-addon (vim-scripts) not installed, installing"
     sudo apt update && sudo apt -y install vim-scripts
 fi
+echo "Vim addons Installed"
+if hash tmux  2>/dev/null; then
+    echo "vim-addon (vim-scripts)  installed"
+else
+    echo "tmux not installed, installing"
+    sudo apt update && sudo apt -y install tmux
+fi
 
-echo "Installed"
+
+echo "tmux Installed"
